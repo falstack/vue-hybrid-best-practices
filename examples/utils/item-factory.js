@@ -1,5 +1,4 @@
 const faker = require('faker')
-faker.locale = 'zh_CN'
 
 let GLOBAL_ID = 0
 
@@ -7,21 +6,21 @@ export default new class {
   get (count) {
     let items = []; let i
     for (i = 0; i < count; i++) {
-      const width = 100 + ~~(Math.random() * 50)
-      const height = 100
       items[i] = {
         id: ++GLOBAL_ID,
-        style: {
-          color: this.getRandomColor()
+        background: this.getRandomColor(),
+        poster: `${faker.image.cats()}?id=${faker.random.number()}`,
+        words: faker.lorem.sentence(),
+        user: {
+          id: faker.random.number(),
+          avatar: `${faker.image.avatar()}?id=${faker.random.number()}`,
+          nickname: faker.name.findName()
         },
-        width,
-        height,
-        data: Object.assign(faker.helpers.createCard(), {
-          number_id: faker.random.number(),
-          uuid: faker.random.uuid(),
-          follow: false
-        }),
-        like: false
+        meta: {
+          play: faker.random.number(),
+          mark: faker.random.number(),
+          like: faker.random.number()
+        }
       }
     }
     return count === 1 ? items[0] : items

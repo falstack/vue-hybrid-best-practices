@@ -15,3 +15,12 @@ export const getListByPage = ({ page, count }) => {
     }, 500)
   })
 }
+
+export const getCarousel = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const result = ItemFactory.get(5)
+      resolve(result)
+    }, 500)
+  })
+}

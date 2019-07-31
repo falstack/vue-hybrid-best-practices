@@ -19,7 +19,7 @@
 <template>
   <div v-if="item" class="comp-item">
     <div class="outer">
-      <div class="inner" :style="{ backgroundColor: item.style.color }" @click="handleClick">
+      <div class="inner" :style="{ backgroundColor: item.background }" @click="handleClick">
         count：{{ index + 1 }}，id：{{ item.id }}，click：{{ click }}
       </div>
     </div>

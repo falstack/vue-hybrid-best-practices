@@ -1,4 +1,11 @@
 <style lang="scss">
+body {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+}
 </style>
 
 <template>

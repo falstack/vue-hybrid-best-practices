@@ -14,17 +14,20 @@
 
   .carousel {
     width: 100%;
-    height: 120px;
+    height: 127px;
+    padding: 12px;
 
     .c-item {
+      height: 103px;
       display: block;
-      height: 120px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     .v-switcher {
+      border-radius: 4px;
+
       &-header {
         &-wrap {
           box-sizing: border-box;
@@ -39,8 +42,8 @@
 
         &-item {
           margin-left: 8px;
-          width: 18px;
-          height: 18px;
+          width: 6px;
+          height: 6px;
           border-bottom-width: 0;
           cursor: default;
           padding: 0;
@@ -115,12 +118,12 @@
 <template>
   <div id="index" :class="{ 'active': isActive }">
     <div class="carousel">
-      <v-switcher :headers="headers1" :swipe="true" :autoplay="2000" align="end" :header-height="18">
+      <v-switcher v-if="carousels.length" :headers="carousels" :swipe="true" :autoplay="2000" align="end" :header-height="6">
         <a
-          v-for="(item, index) in headers1"
+          v-for="(item, index) in carousels"
           :key="index"
           :slot="`${index}`"
-          :style="{ backgroundColor: getRandomColor() }"
+          :style="{ backgroundColor: item.background, backgroundImage: `url(${item.poster})` }"
           class="c-item"
           href="javascript:;"
         >
@@ -198,6 +201,7 @@
 
 <script>
 import ItemComponent from '../components/Item'
+import { getCarousel } from '../utils/api'
 
 export default {
   name: 'Index',
@@ -205,48 +209,35 @@ export default {
     ItemComponent
   },
   data () {
-    const headers2 = [
-      'tab-0',
-      'tab-1',
-      'tab-2奥术大师',
-      'tab',
-      'tab-4答',
-      'tab-5',
-      'tab-6阿斯达稍等',
-      'tab-7',
-      'tab-8奥术大',
-      'tab-9'
-    ]
     return {
       click: 0,
       isActive: false,
-      headers1: [
-        {
-          text: '',
-          title: '成名必备！'
-        },
-        {
-          text: '',
-          title: '花泽香菜，甜美来袭！'
-        },
-        {
-          text: '',
-          title: '鸡鸣紫陌曙光寒，水转皇州春色阑'
-        },
-        {
-          text: '',
-          title: '请查收您的追番清单!'
-        },
-        {
-          text: '',
-          title: '欢迎来到天生制造狂的世界'
-        }
+      carousels: [],
+      headers2: [
+        'tab-0',
+        'tab-1',
+        'tab-2奥术大师',
+        'tab',
+        'tab-4答',
+        'tab-5',
+        'tab-6阿斯达稍等',
+        'tab-7',
+        'tab-8奥术大',
+        'tab-9'
       ],
-      headers2,
       activeIndex: 0
     }
   },
+  created () {
+    this.getCarousels()
+  },
   methods: {
+    getCarousels () {
+      getCarousel()
+        .then(data => {
+          this.carousels = data
+        })
+    },
     getRandomColor () {
       var colors = [
         'rgba(21,174,103,.5)',
