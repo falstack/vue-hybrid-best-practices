@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "h5-vue-scroller": "^0.1.22",
+    "v-switcher": "^1.0.66",
+    "vue": "^2.6.10",
+    "vue-flow-render": "^0.1.28",
+    "vue-mixin-store": "^1.1.57"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
@@ -17,6 +20,7 @@
     "@vue/cli-service": "^3.9.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
     "eslint": "^6.1.0",
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.18.0",
