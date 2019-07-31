@@ -1,29 +1,25 @@
-# vue-hybird-best-practices
+<h1 align="center">Welcome to vue-hybird-best-practices 👋</h1>
 
-## Project setup
-```
-yarn install
-```
+### 🏠 [Homepage](https://github.com/falstack/vue-hybird-best-practices)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
+## Install
+
+```sh
+npm install
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Author
 
-### Run your tests
-```
-yarn run test
-```
+👤 **falstack <icesilt@outlook.com>**
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/falstack/vue-hybird-best-practices/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

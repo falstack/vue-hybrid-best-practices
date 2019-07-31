@@ -1,7 +1,12 @@
 {
   "name": "vue-hybird-best-practices",
   "version": "0.1.0",
-  "private": true,
+  "author": "falstack <icesilt@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/falstack/vue-hybird-best-practices/issues"
+  },
+  "homepage": "https://github.com/falstack/vue-hybird-best-practices",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
