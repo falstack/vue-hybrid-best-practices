@@ -8135,10 +8135,10 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha1-G0r0lV6zB3xQHCOHL8ZROBFYcTE=
 
-v-switcher@^1.0.70:
-  version "1.0.70"
-  resolved "https://registry.npm.taobao.org/v-switcher/download/v-switcher-1.0.70.tgz#7846e3ec8a16f43f9272430f1de641b7645fd194"
-  integrity sha1-eEbj7IoW9D+SckMPHeZBt2Rf0ZQ=
+v-switcher@^1.0.72:
+  version "1.0.72"
+  resolved "https://registry.npm.taobao.org/v-switcher/download/v-switcher-1.0.72.tgz#bf3345148ffd0e4471862983e9e930c8ffbff0ab"
+  integrity sha1-vzNFFI/9DkRxhimD6ekwyP+/8Ks=
   dependencies:
     vue "^2.6.6"
 
@@ -8203,10 +8203,10 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-flow-render@^0.1.29:
-  version "0.1.29"
-  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-0.1.29.tgz#2f4303b215c5f3ee73cb81805dd8aee761735033"
-  integrity sha512-dV4gdByJXO1XF6AjcXYyAY5QL5HggruFbHkURW0cuMOTXYZ6xZYgRvVhMLEoqR0Hun9xfot88lUGj80r+N+Esg==
+vue-flow-render@^0.1.30:
+  version "0.1.30"
+  resolved "https://registry.npm.taobao.org/vue-flow-render/download/vue-flow-render-0.1.30.tgz#551c3d7548c34de9d31c87505e1f01f67ee8f13f"
+  integrity sha1-VRw9dUjDTenTHIdQXh8B9n7o8T8=
   dependencies:
     vue "^2.6.10"
 

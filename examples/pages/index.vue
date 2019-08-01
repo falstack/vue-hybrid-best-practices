@@ -120,9 +120,20 @@
       padding-top: 10px;
 
       .flow-loader-state {
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
+        .first-loading {
+          img {
+            width: 200px;
+            height: auto;
+            margin-top: 50px;
+          }
+        }
+
+        &-loading {
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          color: gray;
+        }
       }
     }
   }
@@ -135,7 +146,7 @@
 </style>
 
 <template>
-  <div id="index" :class="{ 'active': isActive }">
+  <div id="index" :class="{ 'active': hiddenCarousel }">
     <div class="carousel">
       <v-switcher v-if="carousels.length" :headers="carousels" :swipe="true" :autoplay="2000" align="end" :header-height="6">
         <a
@@ -174,7 +185,9 @@
           @scroll-down="handlePullUp"
           @bottom="handleLoadMore"
           @refresh="handleRefresh"
+          @refresh-end="handleRefreshEnd"
         >
+          <refresher ref="refresher" @refresh="handlePageRefresh(index)" />
           <ul class="ul-wrap">
             <li class="hoz-wrap">
               <recommended ref="rec" />
@@ -189,8 +202,12 @@
                 count: 10
               }"
               :callback="handleCallback"
+              :use-first-loading="true"
             >
               <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
+              <div class="first-loading" slot="first-loading">
+                <img src="../assets/loading.gif">
+              </div>
             </flow-loader>
           </ul>
         </v-scroller>
@@ -200,6 +217,7 @@
 </template>
 
 <script>
+import Refresher from '../components/Refresher'
 import Waterfall from '../components/Waterfall'
 import Recommended from '../components/Recommended'
 import { getCarousel } from '../utils/api'
@@ -207,12 +225,13 @@ import { getCarousel } from '../utils/api'
 export default {
   name: 'Index',
   components: {
+    Refresher,
     Waterfall,
     Recommended
   },
   data () {
     return {
-      isActive: false,
+      hiddenCarousel: false,
       carousels: [],
       headers: [
         '火狐',
@@ -239,10 +258,10 @@ export default {
         })
     },
     handlePullDown () {
-      this.isActive = false
+      this.hiddenCarousel = false
     },
     handlePullUp () {
-      this.isActive = true
+      this.hiddenCarousel = true
     },
     handleTabSwitch (index) {
       this.activeIndex = index
@@ -255,6 +274,7 @@ export default {
       this.$nextTick(() => {
         const index = this.activeIndex
         this.$refs.render[index].setWrap(this.$refs.scroll[index].$el)
+        this.$refs.refresher[this.activeIndex].finish()
       })
     },
     handleLoadMore () {
@@ -266,8 +286,16 @@ export default {
     handleBtnClick () {
       alert('排序')
     },
-    handleRefresh () {
-      this.isActive = false
+    handlePageRefresh (index) {
+      this.$refs.loader[index].refresh()
+      this.$refs.render[index].refresh()
+    },
+    handleRefresh (data) {
+      this.hiddenCarousel = false
+      this.$refs.refresher[this.activeIndex].setOffset(data.offset)
+    },
+    handleRefreshEnd () {
+      this.$refs.refresher[this.activeIndex].close()
     }
   }
 }

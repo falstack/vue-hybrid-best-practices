@@ -67,6 +67,10 @@ export default {
       this.cache[index] = result
       return result
     },
+    refresh() {
+      this.cache = {}
+      this.column = [0, 0]
+    },
     setWrap (data) {
       this.$refs.render.setWrap(data)
     },
