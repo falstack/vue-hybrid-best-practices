@@ -33,7 +33,7 @@ $item-size: 88px;
         border-radius: 50%;
         margin-bottom: 10px;
         margin-top: 12px;
-        background-color: #fafafa;
+        background-color: #f2f3f5;
       }
 
       p {

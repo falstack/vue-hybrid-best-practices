@@ -27,6 +27,7 @@
 
     .v-switcher {
       border-radius: 4px;
+      overflow: hidden;
 
       &-header {
         &-wrap {
@@ -115,12 +116,16 @@
         color: rgb(251, 114, 153);
       }
     }
-  }
 
-  .flow-loader-state {
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
+    .flow-loader {
+      padding-top: 10px;
+
+      .flow-loader-state {
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
   }
 }
 </style>
@@ -181,20 +186,7 @@
               }"
               :callback="handleCallback"
             >
-              <vue-flow-render
-                ref="render"
-                :remain="30"
-                :total="count"
-                slot-scope="{ flow, count }"
-              >
-                <item
-                  v-for="(item, index) in flow"
-                  :key="item.id"
-                  :item="item"
-                  :index="index"
-                  :style="{ height: '110px' }"
-                />
-              </vue-flow-render>
+              <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
             </flow-loader>
           </ul>
         </v-scroller>
@@ -204,14 +196,14 @@
 </template>
 
 <script>
-import Item from '../components/Item'
+import Waterfall from '../components/Waterfall'
 import Recommended from '../components/Recommended'
 import { getCarousel } from '../utils/api'
 
 export default {
   name: 'Index',
   components: {
-    Item,
+    Waterfall,
     Recommended
   },
   data () {
@@ -264,8 +256,8 @@ export default {
     handleLoadMore () {
       this.$refs.loader[this.activeIndex].loadMore()
     },
-    handleScroll ({ offsetTop, isUp }) {
-      this.$refs.render[this.activeIndex].scroll(offsetTop, isUp)
+    handleScroll (data) {
+      this.$refs.render[this.activeIndex].scroll(data)
     },
     handleBtnClick () {
       alert('排序')

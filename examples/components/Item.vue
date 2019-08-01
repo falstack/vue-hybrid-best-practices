@@ -1,26 +1,39 @@
 <style lang="scss">
 .comp-item {
-  padding: 0 10px;
-  height: 110px;
+  position: absolute;
+  padding-bottom: 10px;
 
   .outer {
-    padding-top: 10px;
-  }
-
-  .inner {
+    position: relative;
+    height: 100%;
     border-radius: 5px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(80,80,80,.11);
+    overflow: hidden;
+
+    .poster {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .panel {
+      position: absolute;
+      height: 50px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: #fff;
+    }
   }
 }
 </style>
 
 <template>
   <div v-if="item" class="comp-item">
-    <div class="outer">
-      <div class="inner" :style="{ backgroundColor: item.background }" @click="handleClick">
-        count：{{ index + 1 }}，id：{{ item.id }}，click：{{ click }}
+    <div class="outer" :style="{ backgroundColor: item.background }">
+      <img :src="item.poster" class="poster">
+      <div class="panel">
+        panel
       </div>
     </div>
   </div>
@@ -37,16 +50,6 @@ export default {
     index: {
       type: Number,
       required: true
-    }
-  },
-  data () {
-    return {
-      click: 0
-    }
-  },
-  methods: {
-    handleClick () {
-      this.click++
     }
   }
 }
