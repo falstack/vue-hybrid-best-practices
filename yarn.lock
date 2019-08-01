@@ -8135,10 +8135,10 @@ uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha1-G0r0lV6zB3xQHCOHL8ZROBFYcTE=
 
-v-switcher@^1.0.69:
-  version "1.0.69"
-  resolved "https://registry.npm.taobao.org/v-switcher/download/v-switcher-1.0.69.tgz#fbf42a8553a1fc56a7cfed8e317bf0da23380636"
-  integrity sha1-+/QqhVOh/Fanz+2OMXvw2iM4BjY=
+v-switcher@^1.0.70:
+  version "1.0.70"
+  resolved "https://registry.npm.taobao.org/v-switcher/download/v-switcher-1.0.70.tgz#7846e3ec8a16f43f9272430f1de641b7645fd194"
+  integrity sha1-eEbj7IoW9D+SckMPHeZBt2Rf0ZQ=
   dependencies:
     vue "^2.6.6"
 

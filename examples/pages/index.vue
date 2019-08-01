@@ -13,9 +13,10 @@
   }
 
   .carousel {
-    width: 100%;
-    height: 127px;
-    padding: 12px;
+    height: 103px;
+    margin: 12px;
+    border-radius: 4px;
+    overflow: hidden;
 
     .c-item {
       height: 103px;
@@ -26,6 +27,7 @@
     }
 
     .v-switcher {
+
       &-header {
         &-wrap {
           box-sizing: border-box;
@@ -51,13 +53,6 @@
           &.is-active {
             background-color: rgb(251, 114, 153);
           }
-        }
-      }
-
-      &-content {
-        &-panel {
-          border-radius: 4px;
-          overflow: hidden;
         }
       }
     }
@@ -119,10 +114,6 @@
       &.is-active {
         color: rgb(251, 114, 153);
       }
-    }
-
-    .v-switcher-content-panel {
-      overflow: hidden;
     }
 
     .flow-loader {

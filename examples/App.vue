@@ -1,5 +1,8 @@
 <style lang="scss">
 body {
+  font-family: 'Helvetica Neue', Tahoma, Arial, PingFangSC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+
   *,
   *:before,
   *:after {
@@ -10,8 +13,8 @@ body {
     outline: none;
     border: none;
     background-color: transparent;
+    user-select: none;
   }
-  font-family: 'Helvetica Neue', Tahoma, Arial, PingFangSC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
 
   .oneline {
     text-overflow: ellipsis;

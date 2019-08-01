@@ -48,6 +48,14 @@
           border-radius: 50%;
           background-color: #f2f3f5;
           object-fit: cover;
+          float: left;
+          margin-right: 5px;
+        }
+
+        p {
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 20px;
         }
       }
     }
@@ -65,6 +73,7 @@
         <p class="oneline title" v-text="item.words" />
         <div class="meta">
           <img :src="item.user.avatar">
+          <p class="oneline" v-text="item.user.nickname" />
         </div>
       </div>
     </div>
