@@ -24,3 +24,12 @@ export const getCarousel = () => {
     }, 500)
   })
 }
+
+export const getRecommended = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const result = ItemFactory.get(10)
+      resolve(result)
+    }, 500)
+  })
+}

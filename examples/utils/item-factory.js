@@ -9,11 +9,13 @@ export default new class {
       items[i] = {
         id: ++GLOBAL_ID,
         background: this.getRandomColor(),
-        poster: `${faker.image.cats()}?id=${faker.random.number()}`,
+        poster: `${faker.image.animals()}?id=${faker.random.number()}`,
+        width: 100 + ~~(Math.random() * 50),
+        height: 100,
         words: faker.lorem.sentence(),
         user: {
           id: faker.random.number(),
-          avatar: `${faker.image.avatar()}?id=${faker.random.number()}`,
+          avatar: `${faker.image.animals()}?id=${faker.random.number()}`,
           nickname: faker.name.findName()
         },
         meta: {
