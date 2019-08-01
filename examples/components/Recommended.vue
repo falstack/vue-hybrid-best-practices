@@ -34,6 +34,7 @@ $item-size: 88px;
         margin-bottom: 10px;
         margin-top: 12px;
         background-color: #f2f3f5;
+        object-fit: cover;
       }
 
       p {

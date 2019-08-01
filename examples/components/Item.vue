@@ -11,18 +11,45 @@
     overflow: hidden;
 
     .poster {
-      display: block;
-      width: 100%;
-      height: auto;
+      height: 100%;
+      padding-bottom: 70px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .panel {
       position: absolute;
-      height: 50px;
+      height: 70px;
       width: 100%;
       left: 0;
       bottom: 0;
       background-color: #fff;
+      padding: 10px;
+
+      .title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #505050;
+        margin-bottom: 10px;
+      }
+
+      .meta {
+        height: 20px;
+
+        img {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #f2f3f5;
+          object-fit: cover;
+        }
+      }
     }
   }
 }
@@ -31,9 +58,14 @@
 <template>
   <div v-if="item" class="comp-item">
     <div class="outer" :style="{ backgroundColor: item.background }">
-      <img :src="item.poster" class="poster">
+      <div class="poster">
+        <img :src="item.poster">
+      </div>
       <div class="panel">
-        panel
+        <p class="oneline title" v-text="item.words" />
+        <div class="meta">
+          <img :src="item.user.avatar">
+        </div>
       </div>
     </div>
   </div>

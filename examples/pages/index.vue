@@ -117,6 +117,10 @@
       }
     }
 
+    .v-switcher-content-panel {
+      overflow: hidden;
+    }
+
     .flow-loader {
       padding-top: 10px;
 
@@ -126,6 +130,11 @@
         line-height: 40px;
       }
     }
+  }
+
+  .v-scroller {
+    width: 110%;
+    padding-right: 10%;
   }
 }
 </style>

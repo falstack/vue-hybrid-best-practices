@@ -18,6 +18,11 @@ body {
     overflow: hidden;
     white-space: nowrap;
   }
+
+  li,
+  ul {
+    list-style-type: none;
+  }
 }
 </style>
 
