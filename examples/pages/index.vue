@@ -26,9 +26,6 @@
     }
 
     .v-switcher {
-      border-radius: 4px;
-      overflow: hidden;
-
       &-header {
         &-wrap {
           box-sizing: border-box;
@@ -54,6 +51,13 @@
           &.is-active {
             background-color: rgb(251, 114, 153);
           }
+        }
+      }
+
+      &-content {
+        &-panel {
+          border-radius: 4px;
+          overflow: hidden;
         }
       }
     }
@@ -172,7 +176,7 @@
           v-for="(item, index) in headers"
           ref="scroll"
           :key="index"
-          :event-step="30"
+          :event-step="50"
           :slot="`${index}`"
           @top="handlePullDown"
           @scroll="handleScroll"
