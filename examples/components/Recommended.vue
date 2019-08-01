@@ -4,6 +4,7 @@ $item-size: 88px;
   width: 100%;
   height: $item-size;
   overflow: hidden;
+  border-bottom: 1px solid #f4f4f4;
 
   .item-wrap {
     display: inline-block;
@@ -28,8 +29,8 @@ $item-size: 88px;
       img {
         display: block;
         margin: 0 auto;
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         margin-bottom: 10px;
         margin-top: 12px;

@@ -128,7 +128,8 @@
           }
         }
 
-        &-loading {
+        &-loading,
+        &-load {
           height: 40px;
           line-height: 40px;
           font-size: 12px;
@@ -272,8 +273,6 @@ export default {
     },
     handleCallback () {
       this.$nextTick(() => {
-        const index = this.activeIndex
-        this.$refs.render[index].setWrap(this.$refs.scroll[index].$el)
         this.$refs.refresher[this.activeIndex].finish()
       })
     },
@@ -281,13 +280,14 @@ export default {
       this.$refs.loader[this.activeIndex].loadMore()
     },
     handleScroll (data) {
+      console.log('handle-scroll', data)
       this.$refs.render[this.activeIndex].scroll(data)
     },
     handleBtnClick () {
       alert('排序')
     },
     handlePageRefresh (index) {
-      this.$refs.loader[index].refresh()
+      this.$refs.loader[index].refresh(true)
       this.$refs.render[index].refresh()
     },
     handleRefresh (data) {

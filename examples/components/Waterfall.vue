@@ -67,7 +67,7 @@ export default {
       this.cache[index] = result
       return result
     },
-    refresh() {
+    refresh () {
       this.cache = {}
       this.column = [0, 0]
     },
