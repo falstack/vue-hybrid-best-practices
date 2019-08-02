@@ -8203,10 +8203,10 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-flow-render@^0.1.38:
-  version "0.1.38"
-  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-0.1.38.tgz#23ba55dcca121cfed9614160c9e423f96a9ff7f1"
-  integrity sha512-Eq1hlmSe0sxfgmcN+MUFoQBQPo4H9ulxTZ3tPQhR9Aierr1PpBySmkeE8Y6Tv9lBslGp4F8KKdCTtH33bbxOgA==
+vue-flow-render@^0.1.39:
+  version "0.1.39"
+  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-0.1.39.tgz#0e6ea788dea0606b2c9304b6abde16a884ca4d58"
+  integrity sha512-mf979nbOLrQXvrWEhUbLZMPIRHb5EF0DUpg+GbyxJzlWc8KXhAe4BKYtZl7FEhLoMD6kW3/bjuG6Zu4iJ2MGJw==
   dependencies:
     vue "^2.6.10"
 
