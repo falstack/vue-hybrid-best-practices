@@ -7,6 +7,9 @@ body {
   *:before,
   *:after {
     box-sizing: border-box;
+  }
+
+  * {
     cursor: default;
     margin: 0;
     padding: 0;
