@@ -271,16 +271,13 @@ export default {
         this.$refs.rec[index].getItems()
       })
     },
-    handleCallback () {
-      this.$nextTick(() => {
-        this.$refs.refresher[this.activeIndex].finish()
-      })
+    handleCallback ({ refresh }) {
+      refresh && this.$refs.refresher[this.activeIndex].finish()
     },
     handleLoadMore () {
       this.$refs.loader[this.activeIndex].loadMore()
     },
     handleScroll (data) {
-      console.log('handle-scroll', data)
       this.$refs.render[this.activeIndex].scroll(data)
     },
     handleBtnClick () {

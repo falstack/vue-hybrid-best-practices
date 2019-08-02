@@ -7788,8 +7788,8 @@ thread-loader@^2.1.2:
 
 throttle-debounce@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.npm.taobao.org/throttle-debounce/download/throttle-debounce-2.1.0.tgz#257e648f0a56bd9e54fe0f132c4ab8611df4e1d5"
-  integrity sha1-JX5kjwpWvZ5U/g8TLEq4YR304dU=
+  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-2.1.0.tgz#257e648f0a56bd9e54fe0f132c4ab8611df4e1d5"
+  integrity sha512-AOvyNahXQuU7NN+VVvOOX+uW6FPaWdAOdRP5HfwYxAfCzXTFKRMoIMk+n+po318+ktcChx+F1Dd91G3YHeMKyg==
 
 through2@^2.0.0:
   version "2.0.5"
@@ -8203,10 +8203,10 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-flow-render@^0.1.31:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-0.1.31.tgz#49468a4d12c70acb6608f9b0dcc74001bce54dbd"
-  integrity sha512-MEYISE1y79jQStP4R9XARJHPe6gs8woTLJTW4cCK0280Vhnbyla/4YVH5yReN5iLDyvTHELa+BA1DCYMSy6dwg==
+vue-flow-render@^0.1.38:
+  version "0.1.38"
+  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-0.1.38.tgz#23ba55dcca121cfed9614160c9e423f96a9ff7f1"
+  integrity sha512-Eq1hlmSe0sxfgmcN+MUFoQBQPo4H9ulxTZ3tPQhR9Aierr1PpBySmkeE8Y6Tv9lBslGp4F8KKdCTtH33bbxOgA==
   dependencies:
     vue "^2.6.10"
 
@@ -8226,10 +8226,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-mixin-store@^1.1.58:
-  version "1.1.58"
-  resolved "https://registry.yarnpkg.com/vue-mixin-store/-/vue-mixin-store-1.1.58.tgz#6049363d92ece4ec4693dfdcae66998da5f78114"
-  integrity sha512-0dAr0TUnZZ3LdIEizN9wQ4bPdBV/Z1TO2ppi4ArpfizCYdkcShbFTo8zytiGcM3qgLQDQ86y6j3O2GKkcWPLxQ==
+vue-mixin-store@^1.1.59:
+  version "1.1.59"
+  resolved "https://registry.yarnpkg.com/vue-mixin-store/-/vue-mixin-store-1.1.59.tgz#0ea8b5f22984cf267fbb0a4dbbf8e640bc9f3049"
+  integrity sha512-/L6piLI5PNPes8ezWbhoDh4/Qm71TQZ8ZbWPCmvJhK9lzjSQjXbImNqaHbuBbeUsRv/hdn/nbS6HilU38Zin+w==
   dependencies:
     throttle-debounce "^2.1.0"
     vue "^2.6.6"
