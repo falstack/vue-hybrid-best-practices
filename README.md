@@ -5,6 +5,11 @@
 ### 场景如图：
 <img src="https://github.com/falstack/vue-hybird-best-practices/blob/master/assets/img/demo.png?raw=true">
 
+### 在线体验：
+<img src="https://github.com/falstack/vue-hybird-best-practices/blob/master/assets/img/qr.png?raw=true">
+
+[https://falstack.github.io/vue-hybird-best-practices/](https://falstack.github.io/vue-hybird-best-practices/)
+
 > 本项目是对该场景下代码结构的梳理，主要涉及以下几个组件：
 
 - [vue-mixin-store](https://github.com/falstack/vue-mixin-store) 基于 vuex 的一个集中式的状态管理方案
