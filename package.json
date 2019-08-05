@@ -13,22 +13,22 @@
     "lint": "eslint --ext .js,.vue --fix examples"
   },
   "dependencies": {
-    "h5-vue-scroller": "^0.1.22",
+    "h5-vue-scroller": "^1.0.0",
     "normalize.css": "^8.0.1",
     "v-switcher": "^1.0.72",
     "vue": "^2.6.10",
-    "vue-flow-render": "^0.1.39",
+    "vue-flow-render": "^1.0.0",
     "vue-mixin-store": "^1.1.59",
     "vue-router": "^3.0.7",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
-    "core-js": "^2.6.5",
+    "core-js": "^3.1.4",
     "eslint": "^6.1.0",
     "eslint-plugin-vue": "^5.0.0",
     "faker": "^4.1.0",
