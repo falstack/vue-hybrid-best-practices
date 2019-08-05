@@ -35,7 +35,7 @@ export default {
     }
   },
   methods: {
-    setOffset (value) {
+    pull (value) {
       this.offset = value
     },
     close () {

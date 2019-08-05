@@ -188,7 +188,6 @@
           @refresh="handleRefresh"
           @refresh-end="handleRefreshEnd"
         >
-          <refresher ref="refresher" @refresh="handlePageRefresh(index)" />
           <ul class="ul-wrap">
             <li class="hoz-wrap">
               <recommended ref="rec" />
@@ -202,7 +201,6 @@
                 id: item,
                 count: 10
               }"
-              :callback="handleCallback"
               :use-first-loading="true"
             >
               <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
@@ -218,7 +216,6 @@
 </template>
 
 <script>
-import Refresher from '../examples/components/Refresher'
 import Waterfall from '../examples/components/Waterfall'
 import Recommended from '../examples/components/Recommended'
 import { getCarousel } from '../examples/utils/api'
@@ -226,7 +223,6 @@ import { getCarousel } from '../examples/utils/api'
 export default {
   name: 'Index',
   components: {
-    Refresher,
     Waterfall,
     Recommended
   },
@@ -271,9 +267,6 @@ export default {
         this.$refs.rec[index].getItems()
       })
     },
-    handleCallback ({ refresh }) {
-      refresh && this.$refs.refresher[this.activeIndex].finish()
-    },
     handleLoadMore () {
       this.$refs.loader[this.activeIndex].loadMore()
     },
@@ -283,16 +276,8 @@ export default {
     handleBtnClick () {
       alert('排序')
     },
-    handlePageRefresh (index) {
-      this.$refs.loader[index].refresh(true)
-      this.$refs.render[index].refresh()
-    },
-    handleRefresh (data) {
+    handleRefresh () {
       this.hiddenCarousel = false
-      this.$refs.refresher[this.activeIndex].setOffset(data.offset)
-    },
-    handleRefreshEnd () {
-      this.$refs.refresher[this.activeIndex].close()
     }
   }
 }
