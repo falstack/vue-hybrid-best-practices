@@ -1,3 +1,5 @@
+const isDev = process.env.NODE_ENV === 'development'
+
 module.exports = {
   mode: 'spa',
 
@@ -12,4 +14,8 @@ module.exports = {
   css: [
     'normalize.css'
   ],
+
+  build: {
+    publicPath: isDev ? '/_nuxt/' : '/vue-hybird-best-practices/'
+  }
 }
