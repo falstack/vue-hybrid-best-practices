@@ -30,6 +30,11 @@ body {
     list-style-type: none;
   }
 }
+
+body, html, #__nuxt, #__layout, #app {
+  width: 100%;
+  overflow-x: hidden;
+}
 </style>
 
 <template>
