@@ -11,7 +11,8 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "eslint --ext .js,.vue --fix examples",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "h5-vue-scroller": "^1.0.0",
