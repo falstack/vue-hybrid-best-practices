@@ -3,7 +3,7 @@
 > 一个 vue 在 hybird 场景下针对（下图中的） UGC 普遍场景的最佳实践方案
 
 ### 场景如图：
-<img src="https://raw.githubusercontent.com/falstack/vue-hybird-best-practices/master/demo/demo.png">
+<img src="https://raw.githubusercontent.com/falstack/vue-hybird-best-practices/master/assts/img/demo.png">
 
 > 本项目是对该场景下代码结构的梳理，主要涉及以下几个组件：
 

@@ -9,7 +9,7 @@ export default new VueRouter({
     {
       path: '/',
       name: 'index',
-      component: () => import('./pages/index')
+      component: () => import('../pages/index')
     }
   ]
 })

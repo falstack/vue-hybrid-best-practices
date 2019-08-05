@@ -207,7 +207,7 @@
             >
               <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
               <div class="first-loading" slot="first-loading">
-                <img src="../assets/loading.gif">
+                <img src="../examples/assets/loading.gif">
               </div>
             </flow-loader>
           </ul>
@@ -218,10 +218,10 @@
 </template>
 
 <script>
-import Refresher from '../components/Refresher'
-import Waterfall from '../components/Waterfall'
-import Recommended from '../components/Recommended'
-import { getCarousel } from '../utils/api'
+import Refresher from '../examples/components/Refresher'
+import Waterfall from '../examples/components/Waterfall'
+import Recommended from '../examples/components/Recommended'
+import { getCarousel } from '../examples/utils/api'
 
 export default {
   name: 'Index',
