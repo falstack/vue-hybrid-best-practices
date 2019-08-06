@@ -9995,10 +9995,10 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-flow-render@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-1.0.0.tgz#8fa05f2e56d1aa5c68e799360166e643363253e2"
-  integrity sha512-ZheIeKW7JfHW9VdlSkVKYebejmHv/jVvbznpbivgvus/PPQur9e9R/CGuuXrl5R03fFiGH1WAqkEsvpZN1ip4Q==
+vue-flow-render@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-flow-render/-/vue-flow-render-1.0.1.tgz#c893f7ae5f4f3a80c1dfb0eeb09a319913207835"
+  integrity sha512-/Ln4iwJvnwBXPiVIk0cvcQlvHo6MN6Bif+t7B8eT0DEkFv6asIZViCchnKUSLtEAU8QcNQi6ANX8u0HamUfnew==
   dependencies:
     vue "^2.6.10"
 
@@ -10041,10 +10041,15 @@ vue-no-ssr@^1.1.1:
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
 
-vue-router@^3.0.6, vue-router@^3.0.7:
+vue-router@^3.0.6:
   version "3.0.7"
   resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.0.7.tgz#b36ca107b4acb8ff5bc4ff824584059c23fcb87b"
   integrity sha1-s2yhB7SsuP9bxP+CRYQFnCP8uHs=
+
+vue-router@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.1.tgz#0893c29548ba2dbe35ed104dcd1aa06743aa0ead"
+  integrity sha512-RAFCIQjs4gbDV7YNH44c1GT0jXSTFvNhKh3o0xiA/UWI1EM7Eriv45n8kM+R8NZ58wXEGtKVaDVBlrXJBuM/Bg==
 
 vue-server-renderer@^2.6.10:
   version "2.6.10"
