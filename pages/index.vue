@@ -186,7 +186,6 @@
           @scroll-down="handlePullUp"
           @bottom="handleLoadMore"
           @refresh="handleRefresh"
-          @refresh-end="handleRefreshEnd"
         >
           <ul class="ul-wrap">
             <li class="hoz-wrap">
