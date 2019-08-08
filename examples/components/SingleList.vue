@@ -15,7 +15,7 @@
   <vue-flow-render
     ref="render"
     :total="total"
-    :remain="16"
+    :remain="20"
     :height="240"
     :item="itemComp"
     :getter="getProps"
@@ -64,7 +64,8 @@ export default {
       return {
         props: {
           item: this.items[index],
-          index
+          index,
+          showPoster: false
         }
       }
     }

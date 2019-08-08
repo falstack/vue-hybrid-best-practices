@@ -41,7 +41,8 @@
       .meta {
         height: 20px;
 
-        img {
+        img,
+        .shim {
           display: block;
           width: 20px;
           height: 20px;
@@ -67,12 +68,13 @@
   <div v-if="item" class="comp-item">
     <div class="outer" :style="{ backgroundColor: item.background }">
       <div class="poster">
-        <img :src="item.poster">
+        <img v-if="showPoster" :src="item.poster">
       </div>
       <div class="panel">
         <p class="oneline title" v-text="item.words" />
         <div class="meta">
-          <img :src="item.user.avatar">
+          <img v-if="showPoster" :src="item.user.avatar">
+          <div v-else class="shim" />
           <p class="oneline" v-text="item.user.nickname" />
         </div>
       </div>
@@ -91,7 +93,20 @@ export default {
     index: {
       type: Number,
       required: true
+    },
+    showPoster: {
+      type: Boolean,
+      default: true
     }
+  },
+  created () {
+    // console.log('item created')
+  },
+  mounted () {
+    // console.log('item mounted')
+  },
+  beforeUpdate () {
+    // console.log('item re-render')
   }
 }
 </script>

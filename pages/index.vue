@@ -202,10 +202,10 @@
               }"
               :use-first-loading="true"
             >
-              <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
               <!--
-              <single-list ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
+              <waterfall ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
               -->
+              <single-list ref="render" slot-scope="{ flow, count }" :total="count" :items="flow" />
               <div class="first-loading" slot="first-loading">
                 <img src="../examples/assets/loading.gif">
               </div>
