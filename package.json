@@ -17,7 +17,7 @@
   "dependencies": {
     "h5-vue-scroller": "^1.0.0",
     "normalize.css": "^8.0.1",
-    "v-switcher": "^1.0.72",
+    "v-switcher": "^1.0.73",
     "vue": "^2.6.10",
     "vue-flow-render": "^1.0.2",
     "vue-mixin-store": "^1.1.59",

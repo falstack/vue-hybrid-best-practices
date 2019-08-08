@@ -11,7 +11,7 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'update dependencies'
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:falstack/vue-hybird-best-practices.git master:gh-pages
