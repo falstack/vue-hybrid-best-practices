@@ -106,7 +106,7 @@ export default {
     // console.log('item mounted')
   },
   beforeUpdate () {
-    // console.log('item re-render')
+    // console.trace('item re-render')
   }
 }
 </script>
