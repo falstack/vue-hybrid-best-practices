@@ -17,11 +17,11 @@
   "dependencies": {
     "h5-vue-scroller": "^1.0.0",
     "normalize.css": "^8.0.1",
-    "v-switcher": "^1.0.75",
+    "v-switcher": "^1.0.76",
     "vue": "^2.6.10",
-    "vue-flow-render": "^1.0.2",
-    "vue-mixin-store": "^1.1.59",
-    "vue-router": "^3.1.1",
+    "vue-flow-render": "^1.0.4",
+    "vue-mixin-store": "^1.1.61",
+    "vue-router": "^3.1.2",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "node-sass": "^4.12.0",
     "nuxt": "^2.8.1",
     "sass": "^1.18.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.2.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
