@@ -18,6 +18,7 @@
       :key="item.id"
       :style="getItemStyle(item, index)"
       :item="item"
+      :show-poster="false"
       :index="index"
     />
   </vue-flow-render>
