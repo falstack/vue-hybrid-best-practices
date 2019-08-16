@@ -15,12 +15,12 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
-    "h5-vue-scroller": "^1.0.0",
+    "h5-vue-scroller": "^1.0.1",
     "normalize.css": "^8.0.1",
-    "v-switcher": "^1.0.76",
+    "v-switcher": "^1.0.77",
     "vue": "^2.6.10",
     "vue-flow-render": "^1.0.5",
-    "vue-mixin-store": "^1.1.61",
+    "vue-mixin-store": "^1.1.64",
     "vue-router": "^3.1.2",
     "vuex": "^3.1.1"
   },
