@@ -10,7 +10,7 @@
 
 这类页面都会**承载着多个信息流列表**，本文就针对这类复杂信息流页面进行梳理，给出我在做了无数次这类页面后的最佳实践总结。
 
-你可以直接戳这个地址查看最终 [demo 效果](https://falstack.github.io/vue-hybird-best-practices/)（请在手机模式下浏览）
+你可以直接戳这个地址查看最终 [demo 效果](https://falstack.github.io/vue-hybrid-best-practices/)（请在手机模式下浏览）
 
 <img src="https://github.com/falstack/vue-hybird-best-practices/blob/master/assets/img/qr.png?raw=true">
 
